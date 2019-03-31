@@ -11,6 +11,6 @@ public class Role  {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-
+    @ManyToMany
     private Set<User> users = new HashSet<>();
 }

@@ -16,6 +16,7 @@ public class Office {
     private String counyry;
     private String eMail;
     @OneToMany
+    @JoinColumn(name = "office_id")
     private Set<Order> orders = new HashSet<>();
     private String password;
 }
